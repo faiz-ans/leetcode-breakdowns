@@ -18,6 +18,7 @@ Return the <code color=green>indices</code> of two numbers that add up to <code 
 
 ## Intuition
 
+The answer requires finding two elements (the indices), so introduce a hashmap that holds onto already-encountered potential complements to the current number, eliminating the need for nested traversal.
 
 ## Algorithm
 
@@ -26,7 +27,7 @@ Return the <code color=green>indices</code> of two numbers that add up to <code 
      - **<ins>Calculate</ins>** <code color=darkred>complement</code> of the current <code color=darkred>number</code> with the <code color=green>target</code>
      - **<ins>If</ins>** the <code color=darkred>complement</code> was previously encountered:
           - **<ins>Return</ins>** list with current  <code color=green>index</code> and the <code color=green>complement’s index</code> 
-     - **<ins>Insert</ins>** current  <code color=darkred>number</code> with the current <code color=green>index</code> as previously encountered
+     - **<ins>Insert</ins>** current <code color=darkred>number</code> with the current <code color=green>index</code> as previously encountered
 
 ## Complexity
 <table>
